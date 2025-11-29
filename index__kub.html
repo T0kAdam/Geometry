@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Куб</title>
+    <link rel="stylesheet" href="./style__theme.css">
+    <link rel="stylesheet" href="./style__layout--add.css">
+    <link rel="stylesheet" href="./style__components.css">
+    <link rel="stylesheet" href="./style__animation.css">
+    <link rel="shortcut icon" href="./img/kub.png" type="image/x-icon">
+    <script src="./script__add.js" defer></script>
+</head>
+
+<body>
+    <header class="header__section section">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo" href="./index.html">
+                    <img src="./img/kub.png" alt="Куб" class="header__logo--img">
+                    <p class="header__logo--text">Geometry</p>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#hero" class="header__item--link">Главная</a></li>
+                        <li class="header__item"><a href="#facts" class="header__item--link">Факты</a></li>
+                        <li class="header__item"><a href="#task" class="header__item--link">Задачи</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section hero__section" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <img class="hero__img" src="./img/kub.png" alt="Куб">
+                <h1 class="hero__img--text">Куб</h1>
+            </div>
+        </div>
+    </section>
+
+    <main class="main typewriter" data-speed="10" data-delay="900">
+        <section class="main__content" data-speed="10" data-delay="900">
+            <article class="main__facts" id="facts">
+                <section class="block">
+                    <h2 class="title">Что такое куб?</h2>
+                    <p>
+                        Куб — это правильный многогранник, состоящий из шести квадратных граней,
+                        двенадцати рёбер и восьми вершин. Он обладает максимальной симметрией среди
+                        правильных тел и является базовой фигурой в стереометрии.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stats__item"><span>Граней:</span> 6</div>
+                        <div class="stats__item"><span>Рёбер:</span> 12</div>
+                        <div class="stats__item"><span>Вершин:</span> 8</div>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h2 class="title">Как появилось понятие куба?</h2>
+                    <h3>1. Древнейшие цивилизации</h3>
+                    <p>Египтяне и вавилоняне первыми использовали кубические формы в строительстве...</p>
+                    <h3>3. Платон</h3>
+                    <p>Платон связывал куб со стихией Земли, считая его идеальной фигурой...</p>
+                    <h3>4. Евклид</h3>
+                    <p>В “Началах” куб получил своё формальное определение...</p>
+                    <h3>5. Современность</h3>
+                    <p>Сегодня куб используется в 3D-графике, инженерии, архитектуре и физике...</p>
+                    <h3>Итог</h3>
+                    <p>Куб — фигура, прошедшая путь от древних построек до компьютерной графики.</p>
+                </section>
+            </article>
+
+            <article class="main__task" id="task">
+                <h2 class="title">Решение задач</h2>
+                <div class="task__group">
+                    <label for="list-task">Надо найти:</label>
+                    <select id="list-task">
+                        <option value="">--Выберите что-то...--</option>
+                        <option value="Объём куба">Объём</option>
+                        <option value="Площадь куба">Площадь</option>
+                        <option value="Диагональ грани куба">Диагональ грани</option>
+                        <option value="Пространственная диагональ куба">Пространственная грань</option>
+                        <option value="Вписанный радиус куба">Вписанный радиус</option>
+                        <option value="Описанный радиус куба">Описанный радиус</option>
+                    </select>
+                </div>
+
+                <div class="number__group">
+                    <label for="number">Чему равна сторона куба:</label>
+                    <input id="number" placeholder="69" type="number" class="number">
+                </div>
+
+                <button id="answer">Вычислить</button>
+            </article>
+        </section>
+
+        <aside class="sidebar typewriter" data-speed=".2" data-delay="900">
+            <div class="side-block">
+                <h3 class="title">Формулы</h3>
+                <ul class="formula">
+                    <li><b>Объём:</b> V = a³</li>
+                    <li><b>Площадь поверхности:</b> S = 6a²</li>
+                    <li><b>Диагональ грани:</b> d = a√2</li>
+                    <li><b>Пространственная диагональ:</b> D = a√3</li>
+                </ul>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Координаты вершин</h3>
+                <pre class="coords">
+(-a/2, -a/2, -a/2)
+( a/2, -a/2, -a/2)
+( a/2,  a/2, -a/2)
+(-a/2,  a/2, -a/2)
+(-a/2, -a/2,  a/2)
+( a/2, -a/2,  a/2)
+( a/2,  a/2,  a/2)
+(-a/2,  a/2,  a/2)
+                </pre>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Радиусы сфер</h3>
+                <ul>
+                    <li><b>Вписанная:</b> r = a/2</li>
+                    <li><b>Описанная:</b> R = a√3 / 2</li>
+                </ul>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Применение куба</h3>
+                <ul>
+                    <li>3D-графика</li>
+                    <li>Инженерия</li>
+                    <li>Строительство</li>
+                    <li>Кристаллические решётки</li>
+                </ul>
+            </div>
+
+            <div class="main-side-block">
+                <p>V = a³</p>
+            </div>
+
+            <div class="main-side-block">
+                <p>S = 6a²</p>
+            </div>
+        </aside>
+
+
+        <footer class="footer">
+            <section class="footer__section section">
+                <div class="container">
+                    <div class="footer__content">
+                        <blockquote class="quote">
+                            Сделано Токоевым Адамом и Токтобековым Нурмухаметом
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

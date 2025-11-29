@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетраэдр</title>
+    <link rel="stylesheet" href="./style__theme.css">
+    <link rel="stylesheet" href="./style__layout--add.css">
+    <link rel="stylesheet" href="./style__components.css">
+    <link rel="stylesheet" href="./style__animation.css">
+    <link rel="shortcut icon" href="./img/kub.png" type="image/x-icon">
+    <script src="./script__add.js" defer></script>
+</head>
+
+<body>
+    <header class="header__section section">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo" href="./index.html">
+                    <img src="./img/tetro.png" alt="Тетраэдр" class="header__logo--img">
+                    <p class="header__logo--text">Geometry</p>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" class="header__item--link">Главная</a></li>
+                        <li class="header__item"><a href="#" class="header__item--link">Факты</a></li>
+                        <li class="header__item"><a href="#" class="header__item--link">Задачи</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section hero__section">
+        <div class="container">
+            <div class="hero__content">
+                <img class="hero__img" src="./img/tetro.png" alt="Тетраэдр">
+                <h1 class="hero__img--text">Тетраэдр</h1>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="main__content">
+            <article class="main__facts">
+                <section class="block">
+                    <h2 class="title">Что такое тетраэдр?</h2>
+                    <p>
+                        Тетраэдр — это правильный многогранник, состоящий из четырёх
+                        равносторонних треугольных граней, шести рёбер и четырёх вершин.
+                        Это один из пяти платоновых тел и самый простой в пространственной геометрии.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stats__item"><span>Граней:</span> 4</div>
+                        <div class="stats__item"><span>Рёбер:</span> 6</div>
+                        <div class="stats__item"><span>Вершин:</span> 4</div>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h2 class="title">Краткая история</h2>
+                    <h3>1. Древние культуры</h3>
+                    <p>Треугольные формы встречались в архитектуре и украшениях ещё у египтян...</p>
+
+                    <h3>2. Платон</h3>
+                    <p>Платон связывал тетраэдр со стихией Огня — из-за его "острой" формы...</p>
+
+                    <h3>3. Евклид</h3>
+                    <p>В “Началах” Евклид дал строгое математическое определение правильных тел...</p>
+
+                    <h3>4. Современность</h3>
+                    <p>Тетраэдр активно применяется в 3D-графике, химии (например, геометрия молекулы CH₄),
+                        архитектуре и структурной инженерии.</p>
+
+                    <h3>Итог</h3>
+                    <p>Тетраэдр — простая и фундаментальная фигура, лежащая в основе многих наук.</p>
+                </section>
+            </article>
+
+            <article class="main__task">
+                <h2 class="title">Решение задач</h2>
+
+                <div class="task__group">
+                    <label for="list-task">Надо найти:</label>
+                    <select id="list-task">
+                        <option value="">--Выберите что-то...--</option>
+                        <option value="Объём">Объём</option>
+                        <option value="Площадь">Площадь</option>
+                        <option value="Высоту">Высоту</option>
+                        <option value="Радиус вписанной сферы">Радиус вписанной сферы</option>
+                        <option value="Радиус описанной сферы">Радиус описанной сферы</option>
+                    </select>
+                </div>
+
+                <div class="number__group">
+                    <label for="number">Чему равна сторона тетраэдра:</label>
+                    <input id="number" placeholder="10" type="number" class="number">
+                </div>
+
+                <button id="answer">Вычислить</button>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="side-block">
+                <h3 class="title">Формулы</h3>
+                <ul class="formula">
+                    <li><b>Объём:</b> \( V = \frac{a^3 \sqrt{2}}{12} \)</li>
+                    <li><b>Площадь поверхности:</b> \( S = a^2\sqrt{3} \)</li>
+                    <li><b>Высота:</b> \( h = a\sqrt{\frac{2}{3}} \)</li>
+                </ul>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Координаты вершин</h3>
+                <pre class="coords">
+(0, 0, 0)
+(a, 0, 0)
+(a/2, a√3/2, 0)
+(a/2, a√3/6, a√(2/3))
+                </pre>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Радиусы сфер</h3>
+                <ul>
+                    <li><b>Вписанная:</b> r = a√6 / 12</li>
+                    <li><b>Описанная:</b> R = a√6 / 4</li>
+                </ul>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Применение тетраэдра</h3>
+                <ul>
+                    <li>3D-моделирование</li>
+                    <li>Химия (строение молекул)</li>
+                    <li>Инженерные конструкции</li>
+                    <li>Кристаллография</li>
+                </ul>
+            </div>
+
+            <div class="main-side-block">
+                <p>V = a³√2 / 12</p>
+            </div>
+
+            <div class="main-side-block">
+                <p>S = a²√3</p>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <section class="footer__section section">
+                <div class="container">
+                    <div class="footer__content">
+                        <blockquote class="quote">
+                            Сделано Токоевым Адамом и Токтобековым Нурмухаметом
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

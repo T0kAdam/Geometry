@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #fff;
+    --accent-color: blue;
+    --bg-color: black;
+
+    --title-font-family: "Audiowide";
+    --accent-font-family: "Press Start 2P";
+    --main-font-family: "Martian Mono";
+
+    --text-font-size: clamp(1rem, 2vw, 1.5rem);
+    --title-font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+
+    --space: clamp(.75rem, 2vw, 1.5rem);
+
+    --border-radius: 5%;
+
+    --shadow:
+        0 0 8px #00aaff,
+        0 0 16px #00aaff,
+        0 0 32px #00aaff,
+        0 0 64px #00aaff;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параллелепипед</title>
+    <link rel="stylesheet" href="./style__theme.css">
+    <link rel="stylesheet" href="./style__layout--add.css">
+    <link rel="stylesheet" href="./style__components.css">
+    <link rel="stylesheet" href="./style__animation.css">
+    <link rel="shortcut icon" href="./img/kub.png" type="image/x-icon">
+    <script src="./script__add.js" defer></script>
+</head>
+
+<body>
+    <header class="header__section section">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo" href="./index.html">
+                    <img src="./img/kub.png" alt="Параллелепипед" class="header__logo--img">
+                    <p class="header__logo--text">Geometry</p>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" class="header__item--link">Главная</a></li>
+                        <li class="header__item"><a href="#" class="header__item--link">Факты</a></li>
+                        <li class="header__item"><a href="#" class="header__item--link">Задачи</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section hero__section">
+        <div class="container">
+            <div class="hero__content">
+                <img class="hero__img" src="./img/kub.png" alt="Параллелепипед">
+                <h1 class="hero__img--text">Паралле<wbr>лепипед</h1>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="main__content">
+            <article class="main__facts">
+                <section class="block">
+                    <h2 class="title">Что такое паралле<br>лепипед?</h2>
+                    <p>
+                        Параллелепипед — это объёмный многогранник, образованный шестью параллелограммами,
+                        причём противоположные грани попарно параллельны. Частный и наиболее удобный для вычислений
+                        случай — прямоугольный параллелепипед (брус), у которого все углы прямые и грани —
+                        прямоугольники.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stats__item"><span>Граней:</span> 6</div>
+                        <div class="stats__item"><span>Рёбер:</span> 12</div>
+                        <div class="stats__item"><span>Вершин:</span> 8</div>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h2 class="title">Краткая история и применение</h2>
+                    <h3>1. Древние культуры</h3>
+                    <p>Прямоугольные блоки и параллелограммы использовались в строительстве с древних времён.</p>
+
+                    <h3>2. Евклид</h3>
+                    <p>В работах по стереометрии описаны свойства призмы и параллелепипеда как базовых объёмных фигур.
+                    </p>
+
+                    <h3>3. Современность</h3>
+                    <p>Параллелепипед встречается в инженерии, 3D-моделировании, упаковке и вычислениях объёмов.</p>
+
+                    <h3>Итог</h3>
+                    <p>Параллелепипед — практичная и часто используемая форма в математике и технике.</p>
+                </section>
+            </article>
+
+            <article class="main__task">
+                <h2 class="title">Решение задач</h2>
+
+                <div class="task__group">
+                    <label for="list-task">Надо найти:</label>
+                    <select id="list-task">
+                        <option value="">--Выберите что-то...--</option>
+                        <option value="Объём">Объём</option>
+                        <option value="Площадь">Площадь поверхности</option>
+                        <option value="Диагональ грани">Диагональ грани</option>
+                        <option value="Пространственная диагональ">Пространственная диагональ</option>
+                        <option value="Вписанный радиус">Вписанный радиус (в частном случае куба)</option>
+                        <option value="Описанный радиус">Описанный радиус (в частном случае куба)</option>
+                    </select>
+                </div>
+
+                <div class="number__group">
+                    <label for="number">Чему равна длина ребра a (или длина одного из рёбер):</label>
+                    <input id="number" placeholder="Введите a (и при необходимости b, c в JS)" type="number"
+                        class="number">
+                </div>
+
+                <button id="answer">Вычислить</button>
+                <p class="helper" style="margin-top:8px;color:var(--muted);font-size:0.9rem;">
+                    Примечание: для общего параллелепипеда нужны три длины рёбер (a, b, c) и угол(ы).
+                    Здесь предоставлены формулы для прямоугольного параллелепипеда (бруса) — самый практичный случай.
+                </p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="side-block">
+                <h3 class="title">Формулы (прямоу<wbr>гольный паралле<wbr>лепипед)</h3>
+                <ul class="formula">
+                    <li><b>Объём:</b> \( V = a \cdot b \cdot c \)</li>
+                    <li><b>Площадь поверхности:</b> \( S = 2(ab + bc + ac) \)</li>
+                    <li><b>Диагональ грани (например, диагональ прямоугольной грани a×b):</b> \( d = \sqrt{a^{2} +
+                        b^{2}} \)</li>
+                    <li><b>Пространственная диагональ:</b> \( D = \sqrt{a^{2} + b^{2} + c^{2}} \)</li>
+                </ul>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Координаты вершин (центр в начале координат)</h3>
+                <pre class="coords">
+(-a/2, -b/2, -c/2)
+( a/2, -b/2, -c/2)
+( a/2,  b/2, -c/2)
+(-a/2,  b/2, -c/2)
+(-a/2, -b/2,  c/2)
+( a/2, -b/2,  c/2)
+( a/2,  b/2,  c/2)
+(-a/2,  b/2,  c/2)
+                </pre>
+                <p style="margin-top:8px;color:var(--muted);font-size:0.9rem;">
+                    Здесь a, b, c — длины трёх взаимно перпендикулярных рёбер.
+                </p>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Радиусы сфер (для куба)</h3>
+                <ul>
+                    <li><b>Вписанная (куб):</b> r = a/2</li>
+                    <li><b>Описанная (куб):</b> R = a√3 / 2</li>
+                </ul>
+                <p style="margin-top:6px;color:var(--muted);font-size:0.9rem;">
+                    Для общего параллелепипеда формулы более сложные и зависят от углов между рёбрами.
+                </p>
+            </div>
+
+            <div class="side-block">
+                <h3 class="title">Применение</h3>
+                <ul>
+                    <li>Упаковка и логистика</li>
+                    <li>Моделирование в 3D</li>
+                    <li>Строительство (кирпич, блоки)</li>
+                    <li>Инженерия и вычисления объёмов</li>
+                </ul>
+            </div>
+
+            <div class="main-side-block">
+                <p>V = a·b·c</p>
+            </div>
+
+            <div class="main-side-block">
+                <p>S = 2(ab + bc + ac)</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__section section">
+            <div class="container">
+                <div class="footer__content">
+                    <blockquote class="quote">
+                        Сделано Токоевым Адамом и Токтобековым Нурмухаметом
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

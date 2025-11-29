@@ -1,0 +1,115 @@
+@keyframes Neon-text-shadow {
+    0% {
+        text-shadow:
+            0 0 5px #00aaff,
+            0 0 10px #00aaff,
+            0 0 20px #00aaff,
+            0 0 40px #00aaff,
+            0 0 80px #00aaff;
+    }
+
+    50% {
+        text-shadow:
+            0 0 2px #0088dd,
+            0 0 5px #0088dd,
+            0 0 10px #0088dd,
+            0 0 20px #0088dd,
+            0 0 40px #0088dd;
+    }
+
+    100% {
+        text-shadow:
+            0 0 5px #00aaff,
+            0 0 10px #00aaff,
+            0 0 20px #00aaff,
+            0 0 40px #00aaff,
+            0 0 80px #00aaff;
+    }
+}
+
+@keyframes Neon-box-shadow {
+    0% {
+        box-shadow:
+            0 0 5px #00aaff,
+            0 0 10px #00aaff,
+            0 0 20px #00aaff,
+            0 0 40px #00aaff,
+            0 0 80px #00aaff;
+    }
+
+    50% {
+        box-shadow:
+            0 0 2px #0088dd,
+            0 0 5px #0088dd,
+            0 0 10px #0088dd,
+            0 0 20px #0088dd,
+            0 0 40px #0088dd;
+    }
+
+    100% {
+        box-shadow:
+            0 0 5px #00aaff,
+            0 0 10px #00aaff,
+            0 0 20px #00aaff,
+            0 0 40px #00aaff,
+            0 0 80px #00aaff;
+    }
+}
+
+@media (max-width: 1024px) {
+    @keyframes Neon-text-shadow {
+        0% {
+            text-shadow:
+                0 0 4px #00aaff80,
+                0 0 8px #00aaff60,
+                0 0 12px #00aaff40;
+        }
+
+        50% {
+            text-shadow:
+                0 0 2px #0099dd80,
+                0 0 6px #0099dd50,
+                0 0 10px #0099dd30;
+        }
+
+        100% {
+            text-shadow:
+                0 0 4px #00aaff80,
+                0 0 8px #00aaff60,
+                0 0 12px #00aaff40;
+        }
+    }
+
+    @keyframes Neon-box-shadow {
+        0% {
+            box-shadow:
+                0 0 6px #00aaff60,
+                0 0 12px #00aaff40,
+                0 0 24px #00aaff20;
+        }
+
+        50% {
+            box-shadow:
+                0 0 4px #0099dd50,
+                0 0 10px #0099dd30,
+                0 0 20px #0099dd20;
+        }
+
+        100% {
+            box-shadow:
+                0 0 6px #00aaff60,
+                0 0 12px #00aaff40,
+                0 0 24px #00aaff20;
+        }
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
